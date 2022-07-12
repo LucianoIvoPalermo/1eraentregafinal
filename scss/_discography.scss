@@ -1,0 +1,30 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    @if $vista == true {
+        @media only screen and (min-width:1024px){
+            h1{font-size: 130px;}
+            .titulo{font-size: 130px;}
+            img{width: auto;}
+            iframe{width:auto;}
+    }
+        @media only screen and (min-width:768px) and (max-width: 1023px){
+            h1{font-size: 100px;}
+            .titulo{font-size: 100px;}
+            img{width: auto;}
+            iframe{width: auto;}
+            .app{display: none;}
+        }
+        @media only screen and (max-width:767px){
+            h1{font-size: 50px;}
+            .titulo{font-size: 50px;}
+            p{font-size: 15px;}
+            img{width: auto;}
+            iframe{width: auto;}
+            .app{display: none;}
+        }
+    }
+}
